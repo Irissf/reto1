@@ -3,5 +3,10 @@
 <p>variable : {{ title }}</p>
 <img class="imagen" src="{{ url }}" alt="">
 
-<p>El nombre es : {{name}}</p>
+<p *ngIf="name">El nombre es : {{name}}</p>
 <input type="text" [(ngModel)] = "name">
+
+<ul *ngFor="let city of cities">
+    <li>{{city}}</li>
+
+</ul> 

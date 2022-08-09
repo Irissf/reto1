@@ -11,4 +11,7 @@ export class AppComponent {
 
   //bidireccional
   name!: string;
+
+  //directivas
+  cities = ['Vigo','Moaña','Cangas'];
 }
