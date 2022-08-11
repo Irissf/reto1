@@ -5,7 +5,9 @@
 
 <p *ngIf="name">El nombre es : {{name}}</p>
 <input type="text" [(ngModel)] = "name">
-
+<br>
+<p *ngIf="name">lista</p>
 <ul *ngFor="let city of cities"> 
     <li [ngClass]="{'selected': city === 'Vigo'}">{{city}}</li>
 </ul> 
+
